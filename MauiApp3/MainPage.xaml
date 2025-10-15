@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp3.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="20,0"
+            Spacing="25">
+           
+            <Label
+                Text="Właściwości czcionki"
+                TextColor="White"
+                BackgroundColor="#558B2F"
+                Style="{StaticResource Headline}"
+                SemanticProperties.HeadingLevel="Level1" />
+
+            <Label
+                Text="Rozmiar: "
+                Style="{StaticResource SubHeadline}"
+                HorizontalOptions="Start" 
+                x:Name="SizerData"/>
+            <Slider Maximum="40" x:Name="Slider" ValueChanged="Slider_ValueChanged">
+                
+            </Slider>
+            <Label
+                Text="Dzień Dobry"
+                Style="{StaticResource SubHeadline}"
+                HorizontalOptions="Start" 
+                x:Name="Sizer"/>
+            <Button
+                FontAttributes="Bold"
+                BackgroundColor="#558B2F"
+                x:Name="CounterBtn"
+                Text=">>" 
+                SemanticProperties.Hint="Counts the number of times you click"
+                Clicked="CounterBtn_Clicked"
+                HorizontalOptions="Fill" />
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
