@@ -12,21 +12,25 @@
                 Text="Właściwości czcionki"
                 TextColor="White"
                 BackgroundColor="#558B2F"
-                Style="{StaticResource Headline}"
+                FontSize="20"
+                HorizontalOptions="Fill"
                 SemanticProperties.HeadingLevel="Level1" />
 
             <Label
                 Text="Rozmiar: "
-                Style="{StaticResource SubHeadline}"
-                HorizontalOptions="Start" 
+                HorizontalOptions="Fill"
+                FontSize="20" 
+                
                 x:Name="SizerData"/>
-            <Slider Maximum="40" x:Name="Slider" ValueChanged="Slider_ValueChanged">
+            <Slider Maximum="40" Minimum="0" x:Name="Slider" ValueChanged="Slider_ValueChanged">
                 
             </Slider>
             <Label
+                
+                HorizontalOptions="Fill"
                 Text="Dzień Dobry"
-                Style="{StaticResource SubHeadline}"
-                HorizontalOptions="Start" 
+                FontSize="20"
+                 
                 x:Name="Sizer"/>
             <Button
                 FontAttributes="Bold"
@@ -35,7 +39,7 @@
                 Text=">>" 
                 SemanticProperties.Hint="Counts the number of times you click"
                 Clicked="CounterBtn_Clicked"
-                HorizontalOptions="Fill" />
+                HorizontalOptions="Center" />
         </VerticalStackLayout>
     </ScrollView>
 
